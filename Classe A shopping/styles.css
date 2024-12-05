@@ -1,0 +1,1120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .cart button {
+  background-color: #ff9900;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.produto {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  width: 25%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto button {
+  background-color: #ff9900;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+.carrinho {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 50px;
+  height: 50%;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+}
+
+.carrinho ul {
+  list-style: none;
+}
+
+.carrinho ul li {
+  margin-bottom: 10px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  /* Ajuste a largura conforme necessário */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 100vh;
+  /* Preenche a altura da tela */
+}
+
+video {
+  max-width: 100%;
+  /* Garante que o vídeo não ultrapasse a largura do contêiner */
+  max-height: 100%;
+  /* Garante que o vídeo não ultrapasse a altura do contêiner */
+}
+
+.video-container {
+  display: grid;
+  place-items: center;
+  /* Centraliza horizontal e verticalmente */
+  height: 100vh;
+  /* Preenche a altura da tela */
+}
+
+video {
+  max-width: 100%;
+  /* Ajuste conforme necessário */
+  max-height: 100%;
+  /* Ajuste conforme necessário */
+}
+
+.preco {
+  text-align: center;
+  font-size: 1.5em;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: #333;
+  /* Cor do texto */
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  text-align: center;
+  /* Garante que o texto dentro seja centralizado */
+  height: 200px;
+  /* Ajuste conforme necessário */
+}
+
+.preco {
+  font-size: 1.5em;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: #333;
+}
+
+.img {
+  width: 50%;
+  /* Define a largura da imagem como 50% do tamanho original */
+}
+
+.img {
+  width: 100px;
+  /* Define a largura da imagem como 200 pixels */
+  height: auto;
+  /* Mantém a proporção da altura automaticamente */
+}
+
+body {
+  background-color: #f0f0f0;
+  /* Cor sólida */
+}
+
+body {
+  background-image: url('imagens/fundo.jpeg');
+  /* Substitua pelo caminho da sua imagem */
+  background-repeat: no-repeat;
+  /* Evita a repetição da imagem */
+  background-size: cover;
+  /* Faz com que a imagem cubra todo o fundo */
+  background-position: center;
+  /* Centraliza a imagem */
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  /* Ajuste a margem conforme necessário */
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#search-button {
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: slide 10s infinite;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+
+  0%,
+  33% {
+    transform: translateX(0);
+  }
+
+  34%,
+  66% {
+    transform: translateX(-100%);
+  }
+
+  67%,
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.1);
+}
+
+.skeleton {
+  background: linear-gradient(-90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  height: 200px;
+  border-radius: 5px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.nav-menu {
+  position: relative;
+}
+
+
+.produto-container {
+  display: flex;
+  gap: 16px;
+  /* Espaço entre os produtos */
+}
+
+.produto {
+  background-image: url('imagens/fundo.jpeg');
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  flex: 1;
+  /* Faz com que os produtos tenham a mesma largura */
+
+}
+
+.produto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Ajusta o número de colunas automaticamente */
+  gap: 16px;
+  /* Espaço entre os produtos */
+}
+
+.produto {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+}
+
+.produto-container {
+  overflow: hidden;
+  /* Para evitar problemas de elementos flutuantes */
+}
+
+.produto {
+
+  float: right;
+  width: 50%;
+  /* Ajuste a largura conforme necessário */
+  margin: 1%;
+  /* Espaçamento entre os produtos */
+  border: 1px solid #ccc;
+  padding: 50px;
+  text-align: center;
+}
+
+.produto-container {
+  text-align: center;
+  /* Necessário para alinhar os elementos inline-block */
+}
+
+.produto {
+  display: center;
+  width: 50%;
+  /* Ajuste a largura conforme necessário */
+  margin: 1%;
+  /* Espaçamento entre os produtos */
+  border: 1px solid #ccc;
+  padding: 50px;
+  text-align: center;
+}
+
+.produtos {
+
+  text-align: center;
+}
+
+.produto-container {
+  display: center;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente (se tiver altura definida) */
+  flex-wrap: wrap;
+  /* Permite quebra de linha se necessário */
+  gap: 300px;
+  /* Espaçamento entre os produtos */
+  min-height: 100vh;
+  /* Exemplo de altura total da tela */
+}
+
+.produto {
+  border: 1px solid #ccc;
+  padding: 50px;
+  text-align: center;
+  width: 20%;
+  margin-right: 50px;
+
+}
+
+.botao-comprar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.botao-comprar:hover {
+  background-color: #0056b3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  margin-left: 200px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.navbar .right-links {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f4f4;
+  /* Cor de fundo opcional */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  /* Ajuste o tamanho conforme necessário */
+  margin-right: 10px;
+  /* Espaçamento entre texto e imagem */
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  width: 200px;
+  /* Ajuste a largura da barra de pesquisa */
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Estilização base para os botões */
+.navbar .button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  /* Cor de fundo */
+  color: #fff;
+  /* Cor do texto */
+  text-decoration: none;
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  border: none;
+  /* Remover borda padrão */
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Alteração ao passar o mouse */
+.navbar .button:hover {
+  background-color: #0056b3;
+  /* Cor ao passar o mouse */
+  transform: scale(1.05);
+  /* Leve aumento no tamanho */
+}
+
+/* Estilo para botões ativos ou em foco */
+.navbar .button:active,
+.navbar .button:focus {
+  background-color: #003f7f;
+  /* Cor ao clicar */
+  outline: none;
+  /* Remover o contorno */
+}
+
+.logo {
+  border-radius: 50%;
+  width: 100px;
+
+}
+
+.pesquisa {
+  text-align: center;
+  width: 1000px;
+  margin-right: 200px;
+}
+
+header {
+  background-image: url('imagens/fundo.jpeg');
+
+}
+
+header {
+  position: relative;
+}
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Sobreposição preta com 50% de opacidade */
+  z-index: 1;
+}
+header > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.produto {
+  position: relative;
+  width: 200px; /* Exemplo de largura */
+}
+
+.promocao {
+  position: absolute;
+  top: 10px; /* Ajuste conforme necessário */
+  left: 10px; /* Ajuste conforme necessário */
+  background-color: red; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+.novidades {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #070707; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+  text-align: center;
+}
+
+.novidades h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0b0505;
+}
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opcao {
+  width: 200px;
+  text-align: center;
+  background-color: #e6e5ef;
+  border: 1px solid #f4eeee;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opcao img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.opcao h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.opcao p {
+  font-size: 14px;
+  color: #555;
+}
+
+.novidades {
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  padding: 20px; /* Espaçamento interno para o conteúdo */
+  
+}
+
+.botao-acessar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Cor azul */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botao-acessar:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem no corpo */
+}
+
+.novidades {
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 10px; /* (Opcional) Arredonda os cantos */
+}
+
+header {
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  padding: 20px; /* Espaçamento interno para o conteúdo */
+  
+}
+
+header img.logo {
+  max-width: 150px; /* Ajusta o tamanho da logo */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da logo */
+}
+
+header #search-container {
+  margin-top: 10px; /* Adiciona espaçamento acima da barra de pesquisa */
+}
+
+.categorias {
+  padding: 20px;
+  background-color: #110e0e;
+  text-align: center;
+}
+
+.categorias h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categoria {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.categoria img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.categoria h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.categoria a.botao-categoria {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.categoria a.botao-categoria:hover {
+  background-color: #0056b3;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+
+.categorias {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #fff; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza as categorias horizontalmente */
+  gap: 20px; /* Espaçamento entre as categorias */
+}
+
+.categoria {
+  text-align: center; /* Centraliza o conteúdo de texto da categoria */
+  width: 200px; /* Define uma largura fixa para uniformidade */
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  transition: transform 0.3s ease;
+}
+
+.categoria img {
+  width: 100%; /* Faz com que a imagem preencha a largura disponível */
+  height: auto; /* Mantém a proporção original da imagem */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.categoria:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+.categoria h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.categoria .botao-categoria {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.categoria .botao-categoria:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .lista-categorias {
+      flex-direction: column; /* Alinha as categorias em uma única coluna */
+      align-items: center;
+  }
+
+  .categoria {
+      width: 90%; /* Ajusta a largura das categorias em dispositivos menores */
+  }
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as categorias */
+}
+
+.categoria {
+  text-align: center; /* Centraliza o conteúdo da categoria */
+  width: 200px; /* Largura uniforme para todas as categorias */
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.categoria img {
+  max-width: 100%; /* Limita a largura para não exceder o contêiner */
+  height: auto; /* Mantém a proporção original */
+  max-height: 150px; /* Define uma altura máxima */
+  object-fit: cover; /* Garante que a imagem seja cortada uniformemente */
+  border-radius: 8px; /* Bordas arredondadas para imagens */
+  margin-bottom: 10px;
+}
+
+.categoria:hover {
+  transform: scale(1.05); /* Destaca a categoria ao passar o mouse */
+}
+
+.categoria h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.categoria .botao-categoria {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.categoria .botao-categoria:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .categoria {
+      width: 90%; /* Ajusta a largura das categorias em dispositivos menores */
+  }
+
+  .categoria img {
+      max-height: 120px; /* Altura menor em telas menores */
+  }
+}
+
+.navbar {
+  background-image: url('imagens/FUNDO\ DE\ LOJA.avif');
+  color: #fff; /* Define o texto branco para contraste */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  display: flex;
+  justify-content: space-between; /* Espaça os links uniformemente */
+  align-items: center;
+  border-radius: 30px;
+}
+
+.navbar a {
+  color: #fff; /* Garante que os links fiquem brancos */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ccc; /* Adiciona um efeito de hover */
+}
+
+.destaques {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+}
+.produtos-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.produtos-destaque .produto {
+    border: 1px solid #161515;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 30px);
+}
+
+.destaques .produto img {
+  max-width: 150px; /* Ajuste o valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro do container */
+  display: block;
+}
+
+.destaques .produto img {
+  max-width: 70px; /* Ajuste o valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro do container */
+  display: block;
+}
+
+.destaques {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #0f0606; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+}
+
+.categoria{
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  padding: 20px; /* Espaçamento interno para o conteúdo */
+}
+
+.descobertas-do-dia {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #0f0606; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+}
+
+.descobertas-do-dia h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.produtos-descobertas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.produtos-descobertas .produto {
+  border: 1px solid #0d0a0a;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.produtos-descobertas .produto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.produtos-descobertas .produto h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.produtos-descobertas .produto p {
+  color: #444;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.produtos-descobertas .produto .botao-comprar {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.produtos-descobertas .produto .botao-comprar:hover {
+  background-color: #e64a19;
+}
+
+.sobre-classe-a {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #fffbfb; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+}
+
+.sobre-classe-a h2 {
+  font-size: 24px;
+  color: #fffbfb;
+}
+
+.sobre-classe-a p, .sobre-classe-a ul {
+  font-size: 16px;
+  color: #f4f2f2;
+}
+
+.sobre-classe-a ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.informacoes-gerais {
+  margin: 0;
+  padding: 0;
+  background-image: url('imagens/fundo.jpeg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Para ajustar o tamanho da imagem ao espaço disponível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz com que a imagem fique fixa enquanto rola o conteúdo */
+  background-position: center; /* Centraliza a imagem */
+  color: #fffbfb; /* Cor do texto para contraste */
+  padding: 20px; /* Adiciona espaço interno na seção */
+  border-radius: 30px; /* (Opcional) Arredonda os cantos */
+  margin: 100px;
+}
+
+.informacoes-gerais h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f3efef;
+}
+
+.info-bloco {
+  margin-bottom: 15px;
+}
+
+.info-bloco h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fefbfb;
+}
+
+.info-bloco p {
+  font-size: 16px;
+  color: #f4f0f0;
+}
+
+.info-bloco a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.info-bloco a:hover {
+  text-decoration: underline;
+}
